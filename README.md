@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @aaryanmakwana
-- 📫 How to reach me aaryanmakwana2345240@gmail.com 
+- 📫 How to reach me: aaryanmakwana2345240@gmail.com
 
 <!---
 aaryanmakwana/aaryanmakwana is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
