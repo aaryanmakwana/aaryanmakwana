@@ -6,6 +6,7 @@ const projects = [
       "Designed and implemented a smart home system using IoT and microcontrollers to control lighting and appliances remotely.",
     technologies: "Arduino Framework, ESP32, ESP8266, ESP-NOW, CPP, PlatformIO",
     image: "./images/smart_home.jpg",
+    home: true,
   },
   {
     title: "RC car",
@@ -13,6 +14,7 @@ const projects = [
     description:
       "Designed and developed from scratch, a remote-controlled car from scratch using stm32, nrf24l01 module, nema17 motor, and custom circuit board.",
     technologies: "Arduino Framework, NRF24L01, CPP, STM32F103C8T6",
+    home: true,
   },
   {
     title: "Sumo Bot",
@@ -34,6 +36,7 @@ const projects = [
     description:
       "This project was done as a part of term assignment in my PDCMOS (physical design of CMOS technology)class. The project was aimed at visualizing the Polish Notation and its transformation. Polish Notation is used in VLSI design to partition the design into smaller blocks for easier analysis and optimization.",
     technologies: "JavaScript, HTML, CSS",
+    home: true,
   },
   {
     title: "Charge Simulation",
@@ -54,7 +57,7 @@ const projects = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-  const grid = document.getElementById("projects-grid");
+  const grid2 = document.getElementById("projects-grid");
   projects.forEach((project) => {
     const card = document.createElement("div");
     card.className = "card2";
@@ -70,6 +73,29 @@ document.addEventListener("DOMContentLoaded", () => {
             <p class="tech">Technologies: ${project.technologies}</p>
             </div>
         `;
-    grid.appendChild(card);
+    grid2.appendChild(card);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const grid1 = document.getElementById("project-grid");
+  projects.forEach((project) => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+          <div class = 'image-container'><img src=${project.image} alt="${project.title}"></div>
+          <div class = 'project-info'>
+          <h3>
+              <a>${project.title}</a>
+              ${project.link ? `<a href="${project.link}" class = "project-link">[view project]</a>` : ""}
+              ${project.repo ? `<a href="${project.repo}" class = "project-link">[view code]</a>` : ""}
+          </h3>
+          <p>${project.description}</p>
+          <p class="tech">Technologies: ${project.technologies}</p>
+          </div>
+      `;
+    if (project.home) {
+      grid1.appendChild(card);
+    }
   });
 });
