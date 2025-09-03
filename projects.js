@@ -82,7 +82,9 @@ const projects = [
 
 document.addEventListener("DOMContentLoaded", () => {
   const grid2 = document.getElementById("projects-grid");
+  let i=0;
   projects.forEach((project) => {
+    i += 1;
     const card = document.createElement("div");
     card.className = "card2";
     card.innerHTML = `
@@ -99,6 +101,8 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     grid2.appendChild(card);
   });
+
+  console.log(i);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
