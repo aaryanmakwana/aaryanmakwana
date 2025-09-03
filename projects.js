@@ -47,9 +47,33 @@ const projects = [
     technologies: "JavaScript, HTML, CSS",
   },
   {
-    title: "Motor Design Portal",
+    title: "Transformer Design Portal",
     repo: "https://github.com/aaryanmakwana/motor-design-portal",
-    link: "https://github.com/aaryanmakwana/motor-design-portal",
+    link: "https://github.com/aaryanmakwana/TRANSFORMER_DESIGN/index.html",
+    description:
+      "Developed an web-page that helps design different kinds of electric motors, including induction motors, BLDC motors, SRM motors. this was done as an initiative to help my classmates cross-verify their designs and help them develop new designs faster. in future, i am planning to incorporate a feature that outputs the design as a cad file to directly use the design in motor FEM software.",
+    technologies: "JavaScript, HTML, CSS",
+  },
+    {
+    title: "SRM motor Design Portal",
+    repo: "https://github.com/aaryanmakwana/motor-design-portal",
+    link: "https://github.com/aaryanmakwana/SRM_design/index.html",
+    description:
+      "Developed an web-page that helps design different kinds of electric motors, including induction motors, BLDC motors, SRM motors. this was done as an initiative to help my classmates cross-verify their designs and help them develop new designs faster. in future, i am planning to incorporate a feature that outputs the design as a cad file to directly use the design in motor FEM software.",
+    technologies: "JavaScript, HTML, CSS",
+  },
+    {
+    title: "BLDC motor Design Portal",
+    repo: "https://github.com/aaryanmakwana/motor-design-portal",
+    link: "https://github.com/aaryanmakwana/BLDC_DESIGN/index.html",
+    description:
+      "Developed an web-page that helps design different kinds of electric motors, including induction motors, BLDC motors, SRM motors. this was done as an initiative to help my classmates cross-verify their designs and help them develop new designs faster. in future, i am planning to incorporate a feature that outputs the design as a cad file to directly use the design in motor FEM software.",
+    technologies: "JavaScript, HTML, CSS",
+  },
+    {
+    title: "INDUCTION motor Design Portal",
+    repo: "https://github.com/aaryanmakwana/motor-design-portal",
+    link: "https://github.com/aaryanmakwana/motor_design/index.html",
     description:
       "Developed an web-page that helps design different kinds of electric motors, including induction motors, BLDC motors, SRM motors. this was done as an initiative to help my classmates cross-verify their designs and help them develop new designs faster. in future, i am planning to incorporate a feature that outputs the design as a cad file to directly use the design in motor FEM software.",
     technologies: "JavaScript, HTML, CSS",
