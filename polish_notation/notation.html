@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Polish Notation</title>
+        <link rel="stylesheet" href="notation.css" />
+    </head>
+    <body>
+        <div id="left-stack">
+            <input
+                type="text"
+                id="left-input"
+                placeholder="Enter Polish Notation"
+            />
+            <button id="run-button" onclick="runNotation()">Run</button>
+            <button id="download-button" onclick="downloadImage()">
+                Download
+            </button>
+        </div>
+        <div id="right-stack">
+            <canvas id="canvas" width="500" height="500"></canvas>
+        </div>
+
+        <!--script>
+            function drawBlock(ctx, node, top_left, bottom_right) {
+                const mid_x = (top_left.x + bottom_right.x) / 2;
+                const mid_y = (top_left.y + bottom_right.y) / 2;
+
+                const rectWidth = 120;
+                const rectHeight = 60;
+
+                ctx.fillStyle = "#0078d7";
+                ctx.fillRect(
+                    mid_x - rectWidth / 2,
+                    mid_y - rectHeight / 2,
+                    rectWidth,
+                    rectHeight,
+                );
+
+                ctx.strokeStyle = "#004a99";
+                ctx.strokeRect(
+                    mid_x - rectWidth / 2,
+                    mid_y - rectHeight / 2,
+                    rectWidth,
+                    rectHeight,
+                );
+
+                ctx.fillStyle = "white";
+                ctx.font = "16px Arial";
+                ctx.textAlign = "center";
+                ctx.textBaseline = "middle";
+                ctx.fillText(node.value, mid_x, mid_y);
+            }
+
+            function runNotation() {
+                const input = document
+                    .getElementById("left-input")
+                    .value.trim();
+                if (!input) {
+                    alert("Please enter something!");
+                    return;
+                }
+
+                const canvas = document.getElementById("canvas");
+                const ctx = canvas.getContext("2d");
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                const node = { value: input };
+                drawBlock(
+                    ctx,
+                    node,
+                    { x: 0, y: 0 },
+                    { x: canvas.width, y: canvas.height },
+                );
+            }
+        </!script> -->
+        <script src="notation.js"></script>
+    </body>
+</html>
