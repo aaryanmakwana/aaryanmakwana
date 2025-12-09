@@ -1,123 +1,106 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Aaryan Makwana - Electrical Engineering Portfolio</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="container">
-                <a href="index.html" class="logo">Aaryan Makwana</a>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="all_projects.html">Projects</a>
-                    <a href="all_blogs.html">Blog</a>
-                    <a href="#contact">Contact</a>
-                </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaryan Makwana - Electrical Engineering Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Aaryan Makwana</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="all_projects.html">Projects</a>
+                <a href="all_blogs.html">Blog</a>
+                <a href="#contact">Contact</a>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- Home Section -->
-        <section id="home" class="hero">
-            <div class="container">
-                <h1>Hi, I'm Aaryan Makwana</h1>
-                <p>An Electrical Engineer</p>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm Aaryan Makwana</h1>
+            <p>An Electrical Engineer</p>
 
+            <div class="home-btn">
+                <a href="#projects" class="btn">View My Work</a><a href="contact.html" class="btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate Electrical Engineer with a strong
+                background in innovation and technology. I have a keen eye
+                for detail and a passion for problem-solving. I am always
+                looking for new challenges and opportunities to learn and
+                grow.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container" id="projects-section">
+            <!-- Projects will be rendered here by projects.js -->
+        </div>
+        <script src="projects.js"></script>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <div class="container">
+            <h2>
+                <a href="all_blogs.html" class="hover-text"><span class="original">Articles</span>
+                    <span class="new">view all</span></a>
+            </h2>
+            <section id="blogs" class="section">
+                <div class="container">
+                    <div class="grid" id="blog-grid"></div>
+                </div>
+            </section>
+            <script src="blogs.js"></script>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-gray">
+        <div class="container">
+            <div class="contact-links">
                 <div class="home-btn">
-                    <a href="#projects" class="btn">View My Work</a
-                    ><a href="contact.html" class="btn">Get in Touch</a>
+                    <a href="aaryanmakwana.chat@gmail.com" class="btn">Email</a><a
+                        href="https://linkedin.com/in/yourprofile" class="btn">LinkedIn</a>
+                    <a href="https://github.com/aaryanmakwana" class="btn">GitHub</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="about" class="section">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>
-                    I am a passionate Electrical Engineer with a strong
-                    background in innovation and technology. I have a keen eye
-                    for detail and a passion for problem-solving. I am always
-                    looking for new challenges and opportunities to learn and
-                    grow.
-                </p>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="container">
-                <h2>
-                    <a href="all_projects.html" class="hover-text"
-                        ><span class="original">Projects</span>
-                        <span class="new">view all</span></a
-                    >
-                </h2>
-                <section id="projects" class="section">
-                    <div class="container">
-                        <div class="grid" id="project-grid"></div>
-                    </div>
-                </section>
-                <script src="projects.js"></script>
-            </div>
-        </section>
-
-        <!-- Blog Section -->
-        <section id="blog" class="section">
-            <div class="container">
-                <h2>
-                    <a href="all_blogs.html" class="hover-text"
-                        ><span class="original">Articles</span>
-                        <span class="new">view all</span></a
-                    >
-                </h2>
-                <section id="blogs" class="section">
-                    <div class="container">
-                        <div class="grid" id="blog-grid"></div>
-                    </div>
-                </section>
-                <script src="blogs.js"></script>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section bg-gray">
-            <div class="container">
-                <div class="contact-links">
-                    <div class="home-btn">
-                        <a href="aaryanmakwana.chat@gmail.com" class="btn"
-                            >Email</a
-                        ><a
-                            href="https://linkedin.com/in/yourprofile"
-                            class="btn"
-                            >LinkedIn</a
-                        >
-                        <a href="https://github.com/aaryanmakwana" class="btn"
-                            >GitHub</a
-                        >
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer --
+    <!-- Footer --
         <footer class="footer">
             <p>&copy; 2025 Aaryan Makwana. All rights reserved.</p>
         </footer>
         <!--footer -->
-        <!-- JavaScript for Smooth Scrolling -->
-        <script>
-            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-                anchor.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    document
-                        .querySelector(this.getAttribute("href"))
-                        .scrollIntoView({
-                            behavior: "auto",
-                        });
-                });
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                document
+                    .querySelector(this.getAttribute("href"))
+                    .scrollIntoView({
+                        behavior: "auto",
+                    });
             });
-        </script>
-    </body>
+        });
+    </script>
+</body>
+
 </html>
