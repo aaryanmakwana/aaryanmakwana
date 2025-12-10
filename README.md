@@ -31,4 +31,3 @@ looking_to_collaborate_on:
   - Embedded Development
 
 contact: aaryanmakwana2345240@gmail.com
-website: https://aaryanmakwana.github.io/aaryanmakwana/
